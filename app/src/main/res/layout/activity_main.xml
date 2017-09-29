@@ -8,16 +8,62 @@
     <ImageView
         android:id="@+id/imageView"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:src="@drawable/car1" />
+        android:layout_height="480dp"
+        android:src="@drawable/car1"
+        />
     <ImageView
         android:id="@+id/warningtop"
         android:layout_width="70dp"
         android:layout_height="70dp"
         android:src="@drawable/warning"
         android:layout_marginLeft="140dp"
-        android:layout_marginTop="18dp"
+        android:layout_marginTop="15dp"
         android:visibility="invisible"
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true" />
+    <ImageView
+        android:id="@+id/warningrl"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:src="@drawable/warningrl"
+        android:visibility="invisible"
+        android:layout_marginTop="16dp"
+        android:layout_marginStart="56dp"
+        android:layout_alignTop="@+id/warningtop"
+        android:layout_alignStart="@+id/warningtop" />
+    <ImageView
+        android:id="@+id/warninglt"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:src="@drawable/warninglt"
+        android:visibility="invisible"
+        android:layout_alignTop="@+id/warningrl"
+        android:layout_toStartOf="@+id/warningrd"
+        android:layout_marginEnd="41dp" />
+    <ImageView
+        android:id="@+id/warningd"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:src="@drawable/warningd"
+        android:visibility="invisible"
+        android:layout_marginBottom="20dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignStart="@+id/warningtop" />
+    <ImageView
+        android:id="@+id/warningrd"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:src="@drawable/warningrd"
+        android:visibility="invisible"
+        android:layout_marginBottom="30dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignStart="@+id/warningrl" />
+    <ImageView
+        android:id="@+id/warningld"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:src="@drawable/warningld"
+        android:visibility="invisible"
+        android:layout_alignTop="@+id/warningrd"
+        android:layout_alignStart="@+id/warninglt" />
 </RelativeLayout>
