@@ -54,7 +54,6 @@ public class MainActivity extends AppCompatActivity {
 
     
     private void setTabSelection(int index) {
-        clearSelction();
         android.support.v4.app.FragmentTransaction transaction=fragmentManager.beginTransaction();
         hideFragments(transaction);
         switch (index){
@@ -87,10 +86,6 @@ public class MainActivity extends AppCompatActivity {
         if (mapFragment != null) {
             transaction.hide(mapFragment);
         }
-    }
-
-    private void clearSelction() {
-
     }
 
     private void initView() {
